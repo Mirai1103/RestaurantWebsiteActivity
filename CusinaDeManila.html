@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cusina De Manila</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+</head>
+<style>
+  
+  .banner {
+    background-image: url(https://scottawoodward.com/wp-content/uploads/2021/11/SCOTT-A-WOODWARD-DSC_7530-Sarsa-SOCIAL.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+	  padding: 300px 0px;
+	  background-position: center center;
+  }
+  .topnav {
+  background-color: black;
+  overflow: hidden;
+  margin-top: 10px;
+  color: beige;
+  
+  
+}
+.Logo {
+  width: 80px;
+  height: 50px;
+  margin-right: 10px;
+  float: left;
+}
+.topnav a {
+  float: left;
+  color: beige;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav button.split {
+  float: right;
+  background-color: Beige;
+  color: black;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+ 
+}
+.form-popup {
+  display:none; 
+  position: fixed;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+.form-container input[type=text], .form-container input[type=password] {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.form-container .btn {
+  background-color: rgb(39, 138, 214);
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.form-container .cancel {
+  background-color:rgb(214, 39, 39);
+}
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.about {
+  font-family: cursive;
+  color: beige;
+  background-color: Black;
+  width: 40%;
+  height: 20%;
+  margin-left: 100px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  Border: 3px solid beige;
+  float: left;
+  margin-top: -215px;
+
+}
+.btn {
+  background-color: beige;
+  color: black;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 25%;
+  opacity: 0.9;
+}
+.btn:hover {
+  opacity: 4;
+}
+
+.Menu{
+  background-color: beige;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  max-width: 300px;
+  margin-left: 100px;
+  margin-top: 60px;
+  text-align: center;
+  font-family: arial;
+  display: inline-block;
+  padding: 50px;
+  
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+}
+
+.social-links {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.social-links a {
+  font-size: 20px;
+  margin: 0 10px;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+  color: #ff0;
+}
+
+
+
+</style>
+<body>
+    <div class="topnav">
+        <img class="Logo" src="https://scontent.fmnl4-2.fna.fbcdn.net/v/t39.30808-6/291691920_564046972081650_7022535111235384807_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHLIzLBcexfuZcJG_zdrbeNlUDxxWkpqdeVQPHFaSmp1y6M34sNvVNaaBmeT_Em7N6-3bnp9rFDD1WGJJNLFL6B&_nc_ohc=Vwsgtbo2-l0AX-tDph6&_nc_ht=scontent.fmnl4-2.fna&oh=00_AfC_WW_rr59spyKMX8DU3CxC9KCdZU1rYL-_UUc9-HzheQ&oe=63CD16D8" alt="Restaurant Logo">
+        <a href="#home">Home</a>
+        <a href="#Menu">Menu</a>
+        <a href="#contact">Contact</a>
+        <button class="split" onclick="openlogin()">Login</button>
+        </div>
+        <div class="form-popup" id="myForm">
+          <form action="/action_page.php" class="form-container">
+            <h1>Login</h1>
+        
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+        
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+        
+            <button type="submit" class="btn">Login</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </form>
+        </div>
+        <div class="banner">
+    <div class="about" id="home">
+      <h3>Cusina De Manila</h3>
+      <h1>The Best Tasting Filipino Restaurant in Australia</h1>
+      <p>based in Rooty Hill, NSW, Australia. Offering Best tasting and quality filipino food</p>
+      <button type="Book" class="btn">Book A Reservation Now!</button>
+    </div>
+    </div>
+  <div class="Menu" id="Menu">
+    <div class="card">
+      <img src="https://i.pinimg.com/originals/6b/e3/f8/6be3f8cdc9e956ff10377f7f1f008afd.jpg" alt="Palabok" style="width:100%">
+      <h1>Palabok</h1>
+      <p class="price">$10.99</p>
+      <p>Filipino noodles</p>
+      <p><button>Order Now</button></p>
+    </div>
+    <div class="card">
+      <img src="https://www.kawalingpinoy.com/wp-content/uploads/2014/03/crispy-pata-8-1.jpg" alt="Crispy Pata" style="width:100%">
+      <h1>Crispy Pata</h1>
+      <p class="price">$15.00</p>
+      <p>Some text about the jeans..</p>
+      <p><button>Order Now</button></p>
+    </div>
+    <div class="card">
+      <img src="https://usapangfoodtrip.com/wp-content/uploads/2021/04/instagram.commommy.issa325.jpg" alt="Kare-Kare" style="width:100%">
+      <h1>Kare-Kare</h1>
+      <p class="price">$9.99</p>
+      <p>Some text about the jeans..</p>
+      <p><button>Order Now</button></p>
+    </div>
+    <div class="card">
+      <img src="https://media.istockphoto.com/id/1317773991/photo/filipino-food-called-pork-dinuguan-or-pork-blood-stew.jpg?s=612x612&w=0&k=20&c=qimuizdwuu4zMO1ixHmdEzlfRANp6rsDK2fKhpRr8nI=" alt="Dinuguan" style="width:100%">
+      <h1>Dinuguan</h1>
+      <p class="price">$12.99</p>
+      <p>Some text about the jeans..</p>
+      <p><button>Order Now</button></p>
+    </div>
+    <div class="card">
+      <img src="https://www.rappler.com/tachyon/2021/07/shutterstock-adobo-02-sq.png" alt="Adobo" style="width:100%">
+      <h1>Adobo</h1>
+      <p class="price">$13.99</p>
+      <p>Some text about the jeans..</p>
+      <p><button>Order Now</button></p>
+    </div>
+    <div class="card">
+      <img src="https://www.lutongbahayrecipe.com/wp-content/uploads/2019/02/leche-flan.png" alt="Leche Flan" style="width:100%">
+      <h1>Leche Flan</h1>
+      <p class="price">$5.99</p>
+      <p>Some text about the jeans..</p>
+      <p><button>Order Now</button></p>
+    </div>
+    <div class="card">
+      <img src="https://t4.ftcdn.net/jpg/03/96/69/33/360_F_396693321_T07RwoCg7h163OR9jhaKOQ7K49LmzTUJ.jpg" alt="Puto" style="width:100%">
+      <h1>Puto</h1>
+      <p class="price">$10</p>
+      <p>Some text about the jeans..</p>
+      <p><button>Order Now</button></p>
+    </div>
+    <div class="card">
+      <img src="data:image/jpeg;base64,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" alt="Biko" style="width:100%">
+      <h1>Biko</h1>
+      <p class="price">$6.99</p>
+      <p>Some text about the jeans..</p>
+      <p><button>Order Now</button></p>
+    </div>
+    
+  </div>
+  <footer>
+    <div class="container" id="contact">
+      <div class="row">
+        <div class="col-12">
+          <p>Copyright © 2014 <a href="http://[Restaurant Website link]">Cusina De Manila</a> All rights reserved. 
+            | Address: Rooty Hill, NSW, Australia <br>
+             Phone: 198-888-2548 | Email: <a href="mailto:ciprianastillo21@gmail.com">CusinaDeManila@gmail.com</a> | Open Sunday-Saturday 8AM-9PM</p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/cucinademanila"><i class="fab fa-facebook"></i></a>
+            <a href="[Restaurant Twitter link]"><i class="fab fa-twitter"></i></a>
+            <a href="[Restaurant Instagram link]"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+<script>
+  function openlogin() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+</html>
